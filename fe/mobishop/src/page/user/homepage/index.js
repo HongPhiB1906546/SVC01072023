@@ -1,4 +1,4 @@
-import {memo} from "react";
+import React from "react";
 const HomePage = () => {
     return(
         <>

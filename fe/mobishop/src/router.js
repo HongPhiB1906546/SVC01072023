@@ -1,11 +1,12 @@
+import React from "react"
 import {Routes, Route } from 'react-router-dom';
 import HomePage from './page/user/homepage';
 import { ROUTERS } from './utils/router';
-const renderUserRouter=() => {
+const RenderUserRouter=() => {
     const userRouters= [
         {
-            path: ROUTERS.USER.path,
-            component: () => <HomePage/>
+            path: ROUTERS.USER.HOME,
+            component: <HomePage/>
         },
     ]    
     return (
@@ -20,7 +21,7 @@ const renderUserRouter=() => {
     );
 };
 const RouterCustom = ()=> {
-    return renderUserRouter;
+    return <RenderUserRouter/>;
 };
 
 export default RouterCustom;
